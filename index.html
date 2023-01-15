@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<!-- Title and meta -->
+	<title>Modern and Simple Website Carousel - Tiny Slider 2</title>
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="A modern and simple carousel for your website. The carousel is built using the Tiny Slider 2 library - Vanilla javascript slider for all purposes. Feel free to use it for your projects.">
+
+	<!-- Website icons -->
+	<link rel="icon" href="img/favicon-32-32.png" sizes="32x32">
+	<link rel="icon" href="img/favicon-192-192.png" sizes="192x192">
+	<link rel="apple-touch-icon-precomposed" href="img/favicon-180-180.png">
+	<meta name="msapplication-TileImage" content="img/favicon-270-270.png">
+
+	<!-- Google fonts -->
+	<!-- Preconnect -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- Raleway: 400, 400 Italic, 500, 500 Italic, 600, 600 Italic, 700, 700 Italic, 800, 800 Italic, 900, 900 Italic -->
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<!-- CSS files -->
+	<!-- 1: normalize.css ( https://github.com/necolas/normalize.css ) -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- 2: Font Awesome Free Icons v6.2.1 ( https://fontawesome.com/icons ) -->
+	<link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+	<!-- 3: Tiny slider ( https://github.com/ganlanyuan/tiny-slider ) -->
+	<link rel="stylesheet" href="assets/tiny-slider/tiny-slider.css">
+	<!-- 4: Main stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Tiny slider: IE8 polyfills (for IE) -->
+	<!--[if (lt IE 9)]>
+		<script src="assets/tiny-slider/min/tiny-slider.helper.ie8.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<!-- page header -->
+<header class="mw-page-header mw-container">
+
+	<!-- page title -->
+	<h1 class="mw-page-title">Modern and Simple Website Carousel. Powered by <a href="#" target="_blank" rel="noopener noreferrer">Tiny Slider 2</a>.</h1>
+
+	<!-- download link -->
+	<a href="#" target="_blank" rel="noopener noreferrer" class="mw-download-link">Download on GitHub</a>
+
+</header>
+<!-- end: page header -->
+
+<!-- main container with carousel -->
+<main class="mw-main-content mw-container">
+	<h2 class="screen-reader-text">Carousel Demonstration:</h2>
+
+	<!-- ================================== -->
+
+	<!-- start: carousel (tiny-slider) -->
+	<div id="mw-main-carousel-container" class="mw-carousel-container">
+		<div id="mw-main-carousel"><!-- The #mw-main-carousel id is used to initialize the carousel in the js/main.js file. -->
+
+			<!-- item 1 -->
+			<div class="mw-carousel-item">
+				<!-- background image and dark overlay -->
+				<div class="mw-carousel-item-bg" style="background-image: url(img/carousel-images/akin-cakiner-nkUFXi0JSX8-unsplash.jpg);"></div>
+				<div class="mw-carousel-item-overlay"></div>
+				<!-- end: background image and dark overlay -->
+				<!-- content -->
+				<div class="mw-carousel-item-content">
+					<div class="mw-carousel-item-text">
+						<!-- metadata (categories, date, and author) -->
+						<ul class="mw-carousel-item-metadata">
+							<li class="mw-categories">
+								<a href="#">Workflow</a>
+							</li>
+							<li class="mw-date">
+								<a href="#">
+									<span class="date updated">17.10.2022</span>
+								</a>
+							</li>
+							<li class="mw-author mw-hidden">
+								<a href="#" rel="author">
+									<span class="vcard author">
+										<span class="fn">Alexey Trofimov</span>
+									</span>
+								</a>
+							</li>
+						</ul>
+						<!-- end: metadata -->
+						<!-- title -->
+						<h3 class="mw-carousel-item-title">
+							<a href="#">Phasellus leo dolor tempus non auctor</a>
+						</h3>
+						<!-- end: title -->
+					</div>
+				</div>
+				<!-- end: content -->
+			</div>
+			<!-- end: item 1 -->
+
+			<!-- item 2 -->
+			<div class="mw-carousel-item">
+				<!-- background image and dark overlay -->
+				<div class="mw-carousel-item-bg" style="background-image: url(img/carousel-images/ricardo-resende-MNXfFKHI0Qk-unsplash.jpg);"></div>
+				<div class="mw-carousel-item-overlay"></div>
+				<!-- end: background image and dark overlay -->
+				<!-- content -->
+				<div class="mw-carousel-item-content">
+					<div class="mw-carousel-item-text">
+						<!-- metadata (categories, date, and author) -->
+						<ul class="mw-carousel-item-metadata">
+							<li class="mw-categories">
+								<a href="#">Minimalism</a>
+							</li>
+							<li class="mw-date">
+								<a href="#">
+									<span class="date updated">October 30, 2022</span>
+								</a>
+							</li>
+							<li class="mw-author mw-hidden">
+								<a href="#" rel="author">
+									<span class="vcard author">
+										<span class="fn">Alexey Trofimov</span>
+									</span>
+								</a>
+							</li>
+						</ul>
+						<!-- end: metadata -->
+						<!-- title -->
+						<h3 class="mw-carousel-item-title">
+							<a href="#">Lorem ipsum dolor sit amet consectetuer</a>
+						</h3>
+						<!-- end: title -->
+					</div>
+				</div>
+				<!-- end: content -->
+			</div>
+			<!-- end: item 2 -->
+
+			<!-- item 3 -->
+			<div class="mw-carousel-item">
+				<!-- background image and dark overlay -->
+				<div class="mw-carousel-item-bg" style="background-image: url(img/carousel-images/alistair-macrobert-4TKFpJPnyU8-unsplash.jpg);"></div>
+				<div class="mw-carousel-item-overlay"></div>
+				<!-- end: background image and dark overlay -->
+				<!-- content -->
+				<div class="mw-carousel-item-content">
+					<div class="mw-carousel-item-text">
+						<!-- metadata (categories, date, and author) -->
+						<ul class="mw-carousel-item-metadata">
+							<li class="mw-categories">
+								<a href="#">Lifestyle</a>
+							</li>
+							<li class="mw-date">
+								<a href="#">
+									<span class="date updated">13.10.2022</span>
+								</a>
+							</li>
+							<li class="mw-author mw-hidden">
+								<a href="#" rel="author">
+									<span class="vcard author">
+										<span class="fn">Alexey Trofimov</span>
+									</span>
+								</a>
+							</li>
+						</ul>
+						<!-- end: metadata -->
+						<!-- title -->
+						<h3 class="mw-carousel-item-title">
+							<a href="#">Vestibulum fringilla pede sit amet augue</a>
+						</h3>
+						<!-- end: title -->
+					</div>
+				</div>
+				<!-- end: content -->
+			</div>
+			<!-- end: item 3 -->
+
+			<!-- item 4 -->
+			<div class="mw-carousel-item">
+				<!-- background image and dark overlay -->
+				<div class="mw-carousel-item-bg" style="background-image: url(img/carousel-images/riccardo-oliva-C5DLhUkEWfM-unsplash.jpg);"></div>
+				<div class="mw-carousel-item-overlay"></div>
+				<!-- end: background image and dark overlay -->
+				<!-- content -->
+				<div class="mw-carousel-item-content">
+					<div class="mw-carousel-item-text">
+						<!-- metadata (categories, date, and author) -->
+						<ul class="mw-carousel-item-metadata">
+							<li class="mw-categories">
+								<a href="#">Workflow</a>
+							</li>
+							<li class="mw-date">
+								<a href="#">
+									<span class="date updated">11.10.2022</span>
+								</a>
+							</li>
+							<li class="mw-author mw-hidden">
+								<a href="#" rel="author">
+									<span class="vcard author">
+										<span class="fn">Alexey Trofimov</span>
+									</span>
+								</a>
+							</li>
+						</ul>
+						<!-- end: metadata -->
+						<!-- title -->
+						<h3 class="mw-carousel-item-title">
+							<a href="#">Phasellus leo dolor tempus non auctor</a>
+						</h3>
+						<!-- end: title -->
+					</div>
+				</div>
+				<!-- end: content -->
+			</div>
+			<!-- end: item 4 -->
+
+			<!-- item 5 -->
+			<div class="mw-carousel-item">
+				<!-- background image and dark overlay -->
+				<div class="mw-carousel-item-bg" style="background-image: url(img/carousel-images/paul-green-mln2ExJIkfc-unsplash.jpg);"></div>
+				<div class="mw-carousel-item-overlay"></div>
+				<!-- end: background image and dark overlay -->
+				<!-- content -->
+				<div class="mw-carousel-item-content">
+					<div class="mw-carousel-item-text">
+						<!-- metadata (categories, date, and author) -->
+						<ul class="mw-carousel-item-metadata">
+							<li class="mw-categories">
+								<a href="#">Lifestyle</a>
+							</li>
+							<li class="mw-date">
+								<a href="#">
+									<span class="date updated">11.10.2022</span>
+								</a>
+							</li>
+							<li class="mw-author mw-hidden">
+								<a href="#" rel="author">
+									<span class="vcard author">
+										<span class="fn">Alexey Trofimov</span>
+									</span>
+								</a>
+							</li>
+						</ul>
+						<!-- end: metadata -->
+						<!-- title -->
+						<h3 class="mw-carousel-item-title">
+							<a href="#">Lorem ipsum dolor sit amet consectetuer</a>
+						</h3>
+						<!-- end: title -->
+					</div>
+				</div>
+				<!-- end: content -->
+			</div>
+			<!-- end: item 5 -->
+
+			<!-- item 6 -->
+			<div class="mw-carousel-item">
+				<!-- background image and dark overlay -->
+				<div class="mw-carousel-item-bg" style="background-image: url(img/carousel-images/thanos-pal-vb-hPUzfpBo-unsplash.jpg);"></div>
+				<div class="mw-carousel-item-overlay"></div>
+				<!-- end: background image and dark overlay -->
+				<!-- content -->
+				<div class="mw-carousel-item-content">
+					<div class="mw-carousel-item-text">
+						<!-- metadata (categories, date, and author) -->
+						<ul class="mw-carousel-item-metadata">
+							<li class="mw-categories">
+								<a href="#">Workflow</a>
+							</li>
+							<li class="mw-date">
+								<a href="#">
+									<span class="date updated">10.10.2022</span>
+								</a>
+							</li>
+							<li class="mw-author mw-hidden">
+								<a href="#" rel="author">
+									<span class="vcard author">
+										<span class="fn">Alexey Trofimov</span>
+									</span>
+								</a>
+							</li>
+						</ul>
+						<!-- end: metadata -->
+						<!-- title -->
+						<h3 class="mw-carousel-item-title">
+							<a href="#">Vestibulum fringilla pede sit amet augue</a>
+						</h3>
+						<!-- end: title -->
+					</div>
+				</div>
+				<!-- end: content -->
+			</div>
+			<!-- end: item 6 -->
+
+			<!-- item 7 -->
+			<div class="mw-carousel-item">
+				<!-- background image and dark overlay -->
+				<div class="mw-carousel-item-bg" style="background-image: url(img/carousel-images/julia-kun-9ZSsL-IQ2qo-unsplash.jpg);"></div>
+				<div class="mw-carousel-item-overlay"></div>
+				<!-- end: background image and dark overlay -->
+				<!-- content -->
+				<div class="mw-carousel-item-content">
+					<div class="mw-carousel-item-text">
+						<!-- metadata (categories, date, and author) -->
+						<ul class="mw-carousel-item-metadata">
+							<li class="mw-categories">
+								<a href="#">Minimalism</a>
+							</li>
+							<li class="mw-date">
+								<a href="#">
+									<span class="date updated">08.10.2022</span>
+								</a>
+							</li>
+							<li class="mw-author mw-hidden">
+								<a href="#" rel="author">
+									<span class="vcard author">
+										<span class="fn">Alexey Trofimov</span>
+									</span>
+								</a>
+							</li>
+						</ul>
+						<!-- end: metadata -->
+						<!-- title -->
+						<h3 class="mw-carousel-item-title">
+							<a href="#">Phasellusleodolortempusnonauctorandother</a>
+						</h3>
+						<!-- end: title -->
+					</div>
+				</div>
+				<!-- end: content -->
+			</div>
+			<!-- end: item 7 -->
+
+		</div>
+		<!-- animated loading icon: -->
+		<div id="mw-main-carousel-loading-icon">
+			<i class="fa-regular fa-images fa-flip" style="--fa-animation-duration: 1.2s;"></i>
+		</div>
+	</div>
+	<!-- end: carousel -->
+
+	<!-- ================================== -->
+
+</main>
+<!-- end: main container with carousel -->
+
+<!-- page footer -->
+<footer class="mw-page-footer mw-container">
+	<p><a href="https://minimalweb.net/" target="_blank" rel="noopener noreferrer">Minimalweb.net</a> | Made with <i class="fa-solid fa-heart fa-beat"></i> in 2023. Thank you for your interest! Please follow me: <a href="https://www.youtube.com/@MinimalWebDev" target="_blank" rel="noopener noreferrer">YouTube (<em>Minimal Web Dev</em>)</a>, <a href="https://github.com/alexey-trofimov" target="_blank" rel="noopener noreferrer">GitHub (<em>Alexey Trofimov</em>)</a>. Images from <a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash.com</a>.</p>
+	<p>Demonstration in <a href="russian-language.html" target="_blank" rel="noopener noreferrer">Russian here</a>.</p>
+</footer>
+<!-- end: page footer -->
+
+<!-- JS files -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- 1: jQuery 3.6.0 ( https://jquery.com/download/ ) -->
+<script src="js/jquery-3.6.0.min.js"></script>
+<!-- 2: imagesLoaded ( https://imagesloaded.desandro.com/ ) -->
+<script src="assets/imagesLoaded/imagesloaded.pkgd.min.js"></script>
+<!-- 3: Tiny slider ( https://github.com/ganlanyuan/tiny-slider ) -->
+<script src="assets/tiny-slider/min/tiny-slider.js"></script>
+<!-- 4: Main js file -->
+<script src="js/main.js"></script>
+</body>
+</html>

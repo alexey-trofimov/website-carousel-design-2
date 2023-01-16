@@ -1,5 +1,5 @@
 /*
-Main js file (** + Full Ready + all tested **)
+Main js file
 */
 
 ( function( $ ) {
@@ -53,7 +53,7 @@ Main js file (** + Full Ready + all tested **)
 				container: '#mw-main-carousel',
 				mode: 'carousel',
 				axis: 'horizontal',
-				items: 3,
+				items: 1, // if there are no responsive options, then the value is 3
 				gutter: 0,
 				edgePadding: 0,
 				slideBy: 1,
@@ -61,7 +61,7 @@ Main js file (** + Full Ready + all tested **)
 				controls: true,
 				controlsPosition: 'bottom',
 				controlsText: [ '<i class="fa-solid fa-chevron-left"></i>', '<i class="fa-solid fa-chevron-right"></i>' ],
-				nav: true,
+				nav: false, // if there are no responsive options, then true
 				navPosition: 'bottom',
 				speed: 500,
 				autoplay: false,
@@ -72,6 +72,15 @@ Main js file (** + Full Ready + all tested **)
 				mouseDrag: true,
 				autoHeight: false,
 				onInit: showCarouselContent,
+				responsive: {
+					630: {
+						items: 2,
+						nav: true,
+					},
+					900: {
+						items: 3,
+					},
+				},
 			} );
 
 		}

@@ -61,6 +61,14 @@ body {
 	padding-right: 20px;
 	padding-left: 20px;
 }
+@media (max-width: 399px) {
+
+	.mw-container {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+}
 
 
 /*
@@ -90,7 +98,7 @@ Page header
 	font-size: 40px;
 	font-weight: 800;
 	letter-spacing: 0.2px;
-	line-height: 1.4;
+	line-height: 1.3;
 	color: #262530;
 }
 .mw-page-title a {
@@ -119,19 +127,61 @@ Page header
 	box-shadow: inset 0 -1px 0 0 #786fff;
 }
 
+/* Page header: Responsive styles */
+
+/* 1099px */
+@media (max-width: 1099px) {
+
+	.mw-page-title {
+		font-size: 35px;
+	}
+	.mw-download-link {
+		font-size: 17px;
+		line-height: 1.35;
+	}
+
+}
+
+/* 699px */
+@media (max-width: 699px) {
+
+	.mw-page-title {
+		font-size: 30px;
+		line-height: 1.25;
+	}
+
+}
+
+/* 499px */
+@media (max-width: 499px) {
+
+	.mw-page-header {
+		text-align: left;
+	}
+
+}
+
+/* 399px */
+@media (max-width: 399px) {
+
+	.mw-page-title {
+		font-size: 25px;
+	}
+	.mw-download-link {
+		font-size: 15px;
+	}
+
+}
+
 
 /*
-Main container with carousel
+Carousel styles
 --------------------------------------------------------
 */
 
-.mw-main-content {
+.mw-carousel-container {
 	margin-top: 82px;
 	margin-bottom: 70px;
-}
-
-/* carousel styles */
-.mw-carousel-container {
 	position: relative;
 	height: 300px;
 	overflow: hidden;
@@ -464,6 +514,132 @@ Main container with carousel
 	transform: translate3d(0, 0, 0);
 }
 
+/* Carousel: Responsive styles */
+
+/* 1099px */
+@media (max-width: 1099px) {
+
+	/* changing carousel height */
+	.mw-carousel-container,
+	.mw-carousel-item {
+		height: 280px;
+	}
+	.mw-carousel-container.mw-carousel-loaded {
+		height: 313px;
+	}
+
+	/* changing content styles */
+	.mw-carousel-item-content {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.mw-carousel-item-metadata li.mw-categories::before,
+	.mw-carousel-item-metadata li.mw-date::before,
+	.mw-carousel-item-metadata li.mw-author::before {
+		font-size: 13px;
+	}
+	.mw-carousel-item-title {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+}
+
+/* 629px */
+@media (max-width: 629px) {
+
+	/* changing carousel height */
+	.mw-carousel-container,
+	.mw-carousel-item,
+	.mw-carousel-container.mw-carousel-loaded {
+		height: 300px;
+	}
+
+	/* changing content styles */
+	.mw-carousel-item-content {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+	.mw-carousel-item-metadata li.mw-categories::before,
+	.mw-carousel-item-metadata li.mw-date::before,
+	.mw-carousel-item-metadata li.mw-author::before {
+		font-size: 14px;
+	}
+	.mw-carousel-item-title {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+}
+
+/* 499px */
+@media (max-width: 499px) {
+
+	/* changing content styles */
+	.mw-carousel-item-content {
+		text-align: left;
+	}
+	.mw-carousel-item-metadata {
+		margin-right: -10px;
+	}
+	.mw-carousel-item-metadata li {
+		margin-right: 10px;
+		margin-left: 0;
+	}
+
+	/* navigation buttons (next and previous): new position */
+	.mw-carousel-container .tns-controls {
+		left: 20px;
+		margin-left: 0;
+	}
+
+}
+
+/* 399px */
+@media (max-width: 399px) {
+
+	/* changing carousel height */
+	.mw-carousel-container,
+	.mw-carousel-item,
+	.mw-carousel-container.mw-carousel-loaded {
+		height: 280px;
+	}
+
+	/* changing content styles */
+	.mw-carousel-item-content {
+		padding-right: 20px;
+		padding-bottom: 20px;
+		padding-left: 20px;
+	}
+	.mw-carousel-item-metadata li.mw-categories::before,
+	.mw-carousel-item-metadata li.mw-date::before,
+	.mw-carousel-item-metadata li.mw-author::before {
+		font-size: 13px;
+	}
+	.mw-carousel-item-title {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	/* navigation buttons (next and previous): new position */
+	.mw-carousel-container .tns-controls {
+		left: 10px;
+	}
+
+}
+
+/* 319px */
+@media (max-width: 319px) {
+
+	/* changing carousel height */
+	.mw-carousel-container,
+	.mw-carousel-item,
+	.mw-carousel-container.mw-carousel-loaded {
+		height: 250px;
+	}
+
+}
+
 
 /*
 Page footer
@@ -504,6 +680,13 @@ Page footer
 	color: #e8548a;
 }
 
-/* ** end here - add responsive styles ** */
+/* Page footer: Responsive styles */
 
+/* 499px */
+@media (max-width: 499px) {
 
+	.mw-page-footer {
+		text-align: left;
+	}
+
+}

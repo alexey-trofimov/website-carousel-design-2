@@ -68,14 +68,15 @@ Main js file
 				autoplayButtonOutput: false,
 				loop: false,
 				rewind: true,
-				touch: true,
-				mouseDrag: true,
+				touch: false,
+				mouseDrag: false,
 				autoHeight: false,
 				onInit: showCarouselContent,
 				responsive: {
 					630: {
 						items: 2,
 						nav: true,
+						mouseDrag: true,
 					},
 					900: {
 						items: 3,

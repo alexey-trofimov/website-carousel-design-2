@@ -1,5 +1,6 @@
 /*
-Main js file
+Minimal and simple website carousel: Main js file
+main.js v1.0
 */
 
 ( function( $ ) {

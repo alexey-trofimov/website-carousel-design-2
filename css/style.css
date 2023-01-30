@@ -1,9 +1,29 @@
 /*
-Main stylesheet
+Minimal and simple website carousel: Main stylesheet
+style.css v1.0
+
+Project name: Minimal and simple website carousel
+Project URL: https://demo.minimalweb.net/website-carousel-design-2/
+Version: 1.0
+Author: Alexey Trofimov
+Author URL: https://minimalweb.net/
+License: GPLv3
+License URL: https://www.gnu.org/licenses/gpl-3.0.html
+
+Copyright (C) 2023 Alexey Trofimov
 */
 
 /*
-Some common styles
+Table of Contents:
+
+1 - Some common styles
+2 - Page header
+3 - Carousel styles
+4 - Page footer
+*/
+
+/*
+1 - Some common styles
 --------------------------------------------------------
 */
 
@@ -72,7 +92,7 @@ body {
 
 
 /*
-Page header
+2 - Page header
 --------------------------------------------------------
 */
 
@@ -175,10 +195,27 @@ Page header
 
 
 /*
-Carousel styles
+3 - Carousel styles
 --------------------------------------------------------
 */
 
+/* box-sizing for the carousel */
+.mw-border-box,
+.mw-border-box * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.mw-border-box::before,
+.mw-border-box::after,
+.mw-border-box *::before,
+.mw-border-box *::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* carousel container */
 .mw-carousel-container {
 	margin-top: 82px;
 	margin-bottom: 70px;
@@ -642,7 +679,7 @@ Carousel styles
 
 
 /*
-Page footer
+4 - Page footer
 --------------------------------------------------------
 */
 
